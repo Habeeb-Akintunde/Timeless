@@ -1,0 +1,550 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("./Font/Satoshi-Regular.otf");
+}
+@font-face {
+    font-family: "Satoshi-medium";
+    src: url("./Font/Satoshi-Medium.otf");
+}
+@font-face {
+    font-family: "Satoshi-bold";
+    src: url("./Font/Satoshi-Bold.otf");
+}
+@font-face {
+    font-family: "Satoshi-black";
+    src: url("./Font/Satoshi-Black.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Satoshi";
+    letter-spacing: 1px;
+}
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0rem;
+}
+.header-sec{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: auto;
+    padding: 2rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #79747E;
+}
+.header h1{
+    width: fit-content;
+    height: auto;
+    color: #65558F;
+    font-family: "Satoshi-bold";
+}
+.header .link{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 2rem;
+}
+.header .link a{
+    text-decoration: none;
+    font-family: "Satoshi-medium";
+    font-size: 1rem;
+    color: #000;
+}
+.header .link a:hover{
+    color: #65558F;
+}
+.header .link #home{
+    color: #65558F;
+    border-bottom: 1px solid #65558F;
+}
+.header .link i{
+    color: #65558F;
+}
+.header .link .log-in{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 0.875rem;
+    background-color: #65558F;
+    color: #fff;
+    border-radius: 0.35rem;
+}
+.header .link .sign-up{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 0.875rem;
+    background-color: #65558F;
+    color: #fff;
+    border-radius: 0.35rem;
+}
+
+.hero-sec{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0rem;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    justify-content: center;
+}
+.hero-side{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 5rem;
+}
+.text{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+.text p{
+    font-family: "Satoshi-medium";
+}
+.text h1{
+    font-family: "Satoshi-black";
+    font-size: 3rem;
+}
+.text h1 span{
+    font-family: "Satoshi-black";
+    color: #E59330;
+    font-size: 3rem;
+    border-bottom: 2px solid #E59330;
+}
+.hero-side button{
+    width: fit-content;
+    height: auto;
+    padding: 1rem;
+    border: 1.5px solid #CAC4D0;
+    background-color: #fff;
+    color: #65558F;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+.hero-side button:hover{
+    color: #fff;
+    background-color: #65558F;
+    border: 1.5px solid #65558F;
+}
+.hero-side2{
+    width: 50%;
+    height: auto;
+    background-color: #EADDFF;
+    border-radius: 10rem 3rem 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-side2 img{
+    width: 35rem;
+    height: auto;
+}
+
+.hero-cont{
+    width: 100%;
+    height: auto;
+    padding: 0rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+.card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+.short-card{
+    width: fit-content;
+    height: auto;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+.short-card .icon{
+    width: 48px;
+    height: 48px;
+    background-color: #65558F;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.short-card .icon i{
+    color: #fff;
+    font-size: 1.25rem;
+}
+.short-card .text{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.25rem;
+}
+.short-card .text h3{
+    font-family: "Satoshi-medium";
+    
+}
+.short-card .text p{
+    font-family: "Satoshi-medium";
+    color: #625B71;
+}
+
+.deal-card1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.crazy-deal{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 3rem;
+    padding: 2rem 2rem;
+    background-image: url("./images/crazy deal.png");
+}
+.crazy-deal-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+.crazy-deal p{
+    font-family: "Satoshi-medium";
+    color: #fff;
+}
+.crazy-deal h1{
+    font-family: "Satoshi-bold";
+    font-size: 2rem;
+    color: #fff;
+}
+.crazy-deal button{
+    width: 25%;
+    height: auto;
+    padding: 0.875rem;
+    background-color: #245746;
+    border: 3px solid #fff;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: inherit   ;
+}
+.crazy-deal button:hover{
+    background-color: #65558F;
+    color: white;
+    border: 3px solid #65558F;
+}
+
+.spring{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 3rem;
+    padding: 2rem 2rem;
+    background-image: url("./images/spring.png");
+}
+.spring-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+.spring p{
+    font-family: "Satoshi-medium";
+    color: #fff;
+}
+.spring h1{
+    font-family: "Satoshi-bold";
+    font-size: 2rem;
+    color: #fff;
+}
+.spring button{
+    width: 25%;
+    height: auto;
+    padding: 0.875rem;
+    background-color: #245746;
+    border: 3px solid #fff;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: inherit   ;
+}
+.spring button:hover{
+    background-color: #65558F;
+    color: white;
+    border: 3px solid #65558F;
+}
+.deal-card2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.winter{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 0rem;
+    padding: 2rem 2rem;
+    background-image: url("./images/winter.png");
+}
+.winter p{
+    font-family: "Satoshi-medium";
+    color: #fff;
+}
+.winter h1{
+    font-family: "Satoshi-bold";
+    font-size: 2rem;
+    color: #fff;
+}
+.footwear{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 0rem;
+    padding: 2rem 2rem;
+    background-image: url("./images/footwear.png");
+}
+.footwear p{
+    font-family: "Satoshi-medium";
+    color: #fff;
+}
+.footwear h1{
+    font-family: "Satoshi-bold";
+    font-size: 2rem;
+    color: #fff;
+}
+.t-shirts{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 0rem;
+    padding: 2rem 2rem;
+    background-image: url("./images/t-shirts.png");
+}
+.t-shirts p{
+    font-family: "Satoshi-medium";
+    color: #fff;
+}
+.t-shirts h1{
+    font-family: "Satoshi-bold";
+    font-size: 2rem;
+    color: #fff;
+}
+.featured-sec{
+    width: 100%;
+}
+.featured{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0rem;
+    padding: 3rem;
+    background-color: #625B71;
+}
+.featured h1{
+    font-family: "Satoshi-bold";
+    font-size: 2.5rem;
+    color: #fff;
+}
+.featured p{
+    font-family: "Satoshi-medium";
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.product-cards{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+.product{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #79747E;
+    border-radius: 0.5rem;
+}
+.product:hover{
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);  
+}
+.product .img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8DEF8;
+    border-radius: 0.5rem;
+}
+.product .product-details{
+    width: fit-content;
+    height: auto;
+}
+.product .product-details p{
+    font-family: "Satoshi";
+    font-size: 1rem;
+    color: #252525;
+}
+.product .product-details .brand{
+    color: #79747E;
+    font-size: 1rem;
+}
+.star-rate{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.star{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+.star i{
+    color: #F6C000;
+    font-size: 1rem;
+}
+.star-rate .rate p{
+    color: #79747E;
+    font-size: 1rem;
+}
+.cart-like{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #79747E;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.cart:hover{
+    background-color: #79747E;
+    color: white;
+    border: 1.5px solid #79747E;
+}
+.like{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #79747E;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.like:hover{
+    background-color: #79747E;
+    color: white;
+    border: 1.5px solid #79747E;
+}
