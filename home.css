@@ -148,6 +148,9 @@ body{
     font-size: 3rem;
     border-bottom: 2px solid #E59330;
 }
+.hero-side a{
+    text-decoration: none;
+}
 .hero-side button{
     width: fit-content;
     height: auto;
@@ -592,6 +595,10 @@ body{
 .view{
     padding: 0rem 3rem;
 }
+.view a{
+    text-decoration: none;
+    width: 100%;
+}
 .view-more{
     width: fit-content;
     height: auto;
@@ -792,6 +799,9 @@ body{
     row-gap: 1rem;
     background-image: url("./images/feature 1.png");
     padding: 2rem 3rem;
+}
+.repair a{
+    text-decoration: none;
 }
 .repair-text{
     width: 100%;
