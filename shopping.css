@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("./Font/Satoshi-Regular.otf");
+}
+@font-face {
+    font-family: "Satoshi-medium";
+    src: url("./Font/Satoshi-Medium.otf");
+}
+@font-face {
+    font-family: "Satoshi-bold";
+    src: url("./Font/Satoshi-Bold.otf");
+}
+@font-face {
+    font-family: "Satoshi-black";
+    src: url("./Font/Satoshi-Black.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Satoshi";
+    letter-spacing: 1px;
+}
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0rem;
+}
+.header-sec{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 400px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: #fff;
+}
+.header{
+    width: 100%;
+    height: auto;
+    padding: 1rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #79747E;
+    
+}
+.header h1{
+    width: fit-content;
+    height: auto;
+    color: #65558F;
+    font-family: "Satoshi-bold";
+}
+.header .link{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 2rem;
+}
+.header .link a{
+    text-decoration: none;
+    font-family: "Satoshi-medium";
+    font-size: 1rem;
+    color: #000;
+}
+.header .link a:hover{
+    color: #65558F;
+}
+.header .link #shop{
+    color: #65558F;
+    border-bottom: 1px solid #65558F;
+}
+.header .link i{
+    color: #65558F;
+}
+.header .link .log-in{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 0.875rem;
+    background-color: #65558F;
+    color: #fff;
+    border-radius: 0.35rem;
+}
+.header .link .sign-up{
+    width: fit-content;
+    height: auto;
+    padding: 0.5rem 0.875rem;
+    background-color: #65558F;
+    color: #fff;
+    border-radius: 0.35rem;
+}

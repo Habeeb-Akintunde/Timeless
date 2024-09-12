@@ -472,6 +472,11 @@ body{
     border-radius: 0.5rem;
     transition: box-shadow 0.3s ease;
 }
+.product a{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+}
 .product:hover{
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15), 
                 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -538,10 +543,26 @@ body{
 .cart{
     width: fit-content;
     height: auto;
+    display: flex;
     padding: 0.5rem 1rem;
     border: 1.5px solid #79747E;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+.added{
+    width: fit-content;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #7D5260;
+    background-color: #7D5260;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
 }
 .cart:hover{
     background-color: #79747E;
