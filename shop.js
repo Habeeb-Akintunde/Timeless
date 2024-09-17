@@ -60,8 +60,7 @@ cartContainer.forEach((item, index)=>{
   
     let userData = Number(userTarget.dataset.action) 
     let itemID = Number(userTarget.id) 
-    console.log(userData);
-    console.log(itemID);
+    
     
     if (userID === itemID) {
         cart.forEach((item, index)=>{
@@ -88,3 +87,41 @@ cartContainer.forEach((item, index)=>{
 })
 })
 
+
+
+
+// import { myFunction } from "./shopping.js"
+
+// displaying clicked products
+
+
+let productDisplay = document.querySelectorAll(".product")
+productDisplay.forEach((item, index)=>{
+    item.addEventListener("click", (event)=>{
+        window.location.href = "./shopping.html"
+        let userEvent = event.target
+        let userParent = userEvent.parentElement.parentElement
+        
+        
+        // console.log(userEvent);
+        
+        item.setAttribute("id", index)
+
+        if (userParent.classList.contains("product") || userEvent.classList.contains("product-details") || userEvent.classList.contains("product-cards")) {
+            
+            let newID = Number(item.id)
+            
+            // if (index === newID) {
+            //     myFunction()
+            // }
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+    })
+})

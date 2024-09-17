@@ -9,76 +9,51 @@ added.forEach((item, index)=>{
     item.id = index
 })
 let cartContainer = document.querySelectorAll(`.cart-like`)
+
 let displayImage = document.getElementById("display-img")
+let sideContent = document.getElementById("side-content")
 
+let image = document.querySelectorAll(".imgg")
+image.forEach((param, index)=>{
+    param.setAttribute("data-action", index)
+})
+let productsDetails = document.querySelectorAll(".brand")
+productsDetails.forEach((pro, index)=>{
+    pro.setAttribute("data-action", index)
+})
 
+function myFunction() {
+    let displayImage = document.getElementById("display-img")
+    let products = document.querySelectorAll(`.product`)
+            products.forEach((item, index)=>{
+            item.addEventListener("click", (event)=>{
+            let userData = event.target 
+            let grandParent = userData.parentElement.parentElement
+            let user = Number(userData.dataset.action)
+            
+            let ID = index
 
+            if (event.target.tagName === 'IMG') {
+                let imgElement = event.target;
+                displayImage.innerHTML = ``
 
+                if (ID === user) {
+                    const imgClone = imgElement.cloneNode(true);
 
-// function imgindex() {
-//     let image = document.querySelectorAll(".imgg")
-//                 image.forEach((param, index)=>{
-
-//                 param.onclick = function(){
-//                     console.log(index);
+                    displayImage.append(imgClone)
+                    window.scrollTo(0, 0);
                     
-//                 }
-                            
-
-// })
-// }
-
-
-let products = document.querySelectorAll(`.product`)
-products.forEach((item, index)=>{
-    item.addEventListener("click", (event)=>{
-        let userData = event.target 
-        let grandParent = userData.parentElement.parentElement
-        console.log(grandParent);
-        
-        let ID = index
-        // console.log(userData);
-        
-        console.log(ID);
-        
-        let image = document.querySelectorAll(".imgg")
-                image.forEach((param, index)=>{
-
-                param.onclick = function(event){
-                    let user = event.target 
-                    let parent = user.parentElement.parentElement
-                    // console.log(parent);
-                    
-                    // console.log(user);
-                    
-                    console.log(index);
-
-                    if (condition) {
-                        
-                    }
                     
                 }
-        
+
                 
+            }   
 
-})
-    
-
+        })
     })
-})
+}
 
-
-
-// image.
-
-
-
-
-
-
-
-
-
+myFunction()
 
 
 
@@ -96,8 +71,7 @@ cartContainer.forEach((item, index)=>{
   
     let userData = Number(userTarget.dataset.action) 
     let itemID = Number(userTarget.id) 
-    console.log(userData);
-    console.log(itemID);
+
     
     if (userID === itemID) {
         cart.forEach((item, index)=>{
