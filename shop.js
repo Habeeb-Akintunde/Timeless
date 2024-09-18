@@ -98,7 +98,7 @@ cartContainer.forEach((item, index)=>{
 let productDisplay = document.querySelectorAll(".product")
 productDisplay.forEach((item, index)=>{
     item.addEventListener("click", (event)=>{
-        window.location.href = "./shopping.html"
+        
         let userEvent = event.target
         let userParent = userEvent.parentElement.parentElement
         
@@ -111,9 +111,6 @@ productDisplay.forEach((item, index)=>{
             
             let newID = Number(item.id)
             
-            // if (index === newID) {
-            //     myFunction()
-            // }
             
             
         }
