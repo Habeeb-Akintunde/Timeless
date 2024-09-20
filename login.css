@@ -125,11 +125,76 @@ body{
     font-size: 1.25rem;
 }
 
-
-
-
-
-
+.input-sec{
+    width: 100%;
+    height: auto;
+}
+.input{
+    width: 100%;
+    height: auto;
+}
+.form{
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+.form input{
+    width: 60%;
+    height: auto;
+    border: 1px solid #ADA9A9;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #7a7878;
+    background-color: #fff;
+    font-size: 1rem;
+    position: relative;
+}
+.form span{
+    position: absolute;
+    cursor: pointer;
+}
+.part{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.remember{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 0.5rem;
+}
+.remember span{
+    display: none;
+}
+.forget{
+    width: fit-content;
+    height: auto;
+}
+.forget p{
+    color: #B3261E;
+    cursor: pointer;
+}
+.form button{
+    width: 60%;
+    height: auto;
+    padding: 1rem;
+    background-color: #65558F;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
 
 /* bottom */
 .bottom-sec{
