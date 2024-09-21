@@ -95,7 +95,7 @@ cartContainer.forEach((item, index)=>{
                 item.style.display = "none"
             }  
         })
-})
+}) 
 })
 
 

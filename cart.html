@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./cart.css">
+    <title>TimelessTrade Hub</title>
+</head>
+<body>
+    <section class="header-sec">
+        <div class="header">
+            <h1>TimelessTrade Hub</h1>
+            <div class="link">
+                <a href="./home.html">Home</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./content.html">Contact</a>
+                <a href="./cart.html" id="cart"><i class="material-symbols-outlined">shopping_cart</i></a>
+                <a href="./login.html"><div class="log-in">Log in</div></a>
+                <a href="./signup.html"><div class="sign-up">Sign up</div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-header">
+        <div class="shop">
+            <h1>#Cart</h1>
+            <p>Add your coupon code & save up to 70%</p>
+        </div>
+    </section>
+
+    <section class="cart-sec">
+        <div class="cart-container">
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Remove</th>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="material-symbols-outlined">cancel</i></td>
+                        <td><img src="./images/f61.png" alt="Product Image"></td>
+                        <td>Cartoon Astronaut T-Shirts</td>
+                        <td>$115.00</td>
+                        <td><input type="number" value="1" class="qty-input"></td>
+                        <td>$115.00</td>
+                    </tr>
+                    <!-- Repeat for each item -->
+                </tbody>
+            </table>
+        
+            <div class="cart-summary">
+                <div class="apply-coupon">
+                    <h3>Apply Coupon</h3>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button>Apply</button>
+                </div>
+        
+                <div class="cart-totals">
+                    <h3>Cart Totals</h3>
+                    <p>Cart Subtotal: <span>$890.00</span></p>
+                    <p>Shipping: <span>Free</span></p>
+                    <p>Total: <span>$890.00</span></p>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        
+        </div> 
+    </section>
+    
+   
+
+    <section class="bottom-sec">
+        <div class="bottom-top">
+            <div class="top">
+                <p>Sign up for newsletters</p>
+                <h2>Get E-mail updates about our latest shop and special offer!</h2>
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Enter Your Email" name="emai" id="email">
+                <button>SIgn Up</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom1">
+                <h1>TimelessTrade Hub</h1>
+                <h2>Get in touch with us</h2>
+                <p>Address: 562 Wellington Road, Lekki Phase II</p>
+                <p>Phone: +01 2222 365 / +01 66677 232</p>
+                <p>Email: info@timelesstradehun.ng</p>
+                <div class="follow">
+                    <p>Follow Us;</p>
+                    <img src="./images/ri_twitter-x-fill.png" alt="">
+                    <img src="./images/fontisto_instagram.png" alt="">
+                    <img src="./images/humbleicons_brand-facebook.png" alt="">
+                </div>
+                
+            </div>
+            <div class="bottom2">
+                <h2>About</h2>
+                <p>About us</p>
+                <p>Delivery info</p>
+                <p>Privacy policy</p>
+                <p>Terms & conditions</p>
+            </div>
+            <div class="bottom3">
+                <h2>My Account</h2>
+                <p>Sign in</p>
+                <p>View cart</p>
+                <p>My wishlist</p>
+                <p>Track my order</p>
+            </div>
+            <div class="bottom4">
+                <h2>Install App</h2>
+                <p>From App store or Goggle store</p>
+                <div class="store">
+                    <img src="./images/App Store.png" alt="">
+                    <img src="./images/Group.png" alt="">
+                </div>
+                <p>Secure payment gateways</p>
+                <div class="pay-cards">
+                    <img src="./images/Visa.png" alt="">
+                    <img src="./images/Discover.png" alt="">
+                    <img src="./images/Mastercard.png" alt="">
+                    <img src="./images/PayPal.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./cart.js" type="module"></script>
+</body>
+</html>     
