@@ -7,7 +7,7 @@ checked.setAttribute("data-action", "checked")
 rememberContainer.addEventListener("click", (event)=>{
     let userEvent = event.target
     
-    let userTargetData = userEvent.dataset.action 
+    let userTargetData = userEvent.dataset.action     
 
     if(userTargetData === "unchecked"){
         unchecked.style.display = "none"

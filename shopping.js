@@ -51,12 +51,26 @@ function myFunction() {
 
         })
     })
+    
 }
 
 myFunction()
 
 
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
 
+  // Retrieve the data parameter
+  const receivedData = getQueryParam('userParent');
+
+  // Display the received data
+  if (receivedData) {
+    console.log(receivedData);
+    
+  }
+  getQueryParam()
 
 // cart.addEventListener
 
