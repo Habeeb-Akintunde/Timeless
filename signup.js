@@ -7,7 +7,7 @@ checked.setAttribute("data-action", "checked")
 rememberContainer.addEventListener("click", (event)=>{
     let userEvent = event.target
     
-    let userTargetData = userEvent.dataset.action 
+    let userTargetData = userEvent.dataset.action     
 
     if(userTargetData === "unchecked"){
         unchecked.style.display = "none"
@@ -17,7 +17,6 @@ rememberContainer.addEventListener("click", (event)=>{
         checked.style.display = "none"
     }    
 })
-
 
 const passwordInput = document.getElementById("password")
 const passwordIcon = document.getElementById("hide-icon")
@@ -32,7 +31,7 @@ passwordIcon.addEventListener("click", (event)=>{
         let userTarget = event.target
         let userData = userTarget.dataset.action 
     if (userData === "hidden") {
-        passwordIcon.style.display = "none" 
+        passwordIcon.style.display = "none"
         review.style.display = "flex"
     }  
 })
@@ -46,4 +45,35 @@ if (userData === "review") {
     passwordIcon.style.display = "flex"
     review.style.display = "none"
 }  
+})
+
+
+
+const passwordInput2 = document.getElementById("password2")
+const passwordIcon2 = document.getElementById("hide-icon2")
+passwordIcon2.setAttribute("data-action", "hidden")
+const review2 = document.getElementById("review2")
+review2.setAttribute("data-action", "review")
+
+passwordIcon2.addEventListener("click", (event)=>{
+    const type = passwordInput2.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput2.setAttribute('type', type);
+
+        let userTarget = event.target
+        let userData = userTarget.dataset.action 
+    if (userData === "hidden") {
+        passwordIcon2.style.display = "none"
+        review2.style.display = "flex"
+    }  
+})
+review2.addEventListener("click", (event)=>{
+    let userTarget = event.target
+    let userData = userTarget.dataset.action 
+        const type = passwordInput2.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput2.setAttribute('type', type);
+
+    if (userData === "review") {
+        passwordIcon2.style.display = "flex"
+        review2.style.display = "none"
+    }  
 })

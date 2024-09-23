@@ -146,15 +146,44 @@ body{
 .form input{
     width: 60%;
     height: auto;
-    border: 1px solid #ADA9A9;
+    border: 2px solid #ADA9A9;
     padding: 2rem 1rem 2rem 1rem;
     color: #7a7878;
     background-color: #fff;
     font-size: 1rem;
-    position: relative;
 }
-.form span{
-    position: absolute;
+.form #userid:focus{
+    border: 2px solid #464242;
+    outline: none;
+    border-radius: 0.5rem;
+}
+.password-hide{
+    width: 60%;
+    height: auto;
+    border: 2px solid #ADA9A9;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #7a7878;
+    background-color: #fff; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.password-hide i{
+    display: none;
+    cursor: pointer;
+}
+.password-hide:focus-within{
+    border: 2px solid #464242;
+    border-radius: 0.5rem;
+}
+.password-hide input{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 0rem;
+}
+.password-hide span{
     cursor: pointer;
 }
 .part{
@@ -174,8 +203,12 @@ body{
     align-items: start;
     column-gap: 0.5rem;
 }
+.remember i{
+    cursor: pointer;
+}
 .remember span{
     display: none;
+    cursor: pointer;
 }
 .forget{
     width: fit-content;

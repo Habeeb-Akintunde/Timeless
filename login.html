@@ -35,11 +35,17 @@
         <div class="input">
             <form class="form">
                 <input type="text" placeholder="Email or Username" name="userid" id="userid" required>
-                <input type="password" placeholder="Password" name="password" id="password" required><span class="material-symbols-outlined" >visibility_off</span> 
+                <div class="password-hide">
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                    <span class="material-symbols-outlined" id="hide-icon">visibility_off</span>
+                    <i class="material-symbols-outlined" id="review">
+                        visibility
+                        </i>
+                </div> 
                     <div class="part">
-                        <div class="remember">
-                            <i class="material-symbols-outlined">check_box_outline_blank</i>
-                            <span class="material-symbols-outlined">check_box</span>
+                        <div class="remember" id="remember">
+                            <i class="material-symbols-outlined" id="unchecked">check_box_outline_blank</i>
+                            <span class="material-symbols-outlined" id="checked">check_box</span>
                             <p>Remember me</p>
                         </div>
                         <div class="forget">

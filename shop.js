@@ -101,8 +101,9 @@ productDisplay.forEach((item, index)=>{
         
         let userEvent = event.target
         let userParent = userEvent.parentElement.parentElement
+
         
-        
+        window.location.href = `shopping.html?data=${encodeURIComponent(userParent)}`
         // console.log(userEvent);
         
         item.setAttribute("id", index)
@@ -110,6 +111,7 @@ productDisplay.forEach((item, index)=>{
         if (userParent.classList.contains("product") || userEvent.classList.contains("product-details") || userEvent.classList.contains("product-cards")) {
             
             let newID = Number(item.id)
+            console.log(newID);
             
             
             
