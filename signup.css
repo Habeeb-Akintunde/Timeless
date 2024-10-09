@@ -154,6 +154,7 @@ body{
 }
 .form #userid:focus{
     border: 2px solid #464242;
+    outline: none;
     border-radius: 0.5rem;
 }
 .password-hide{
@@ -167,6 +168,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+}
+.password-hide i{
+    display: none;
+    cursor: pointer;
 }
 .password-hide:focus-within{
     border: 2px solid #464242;
@@ -197,7 +202,6 @@ body{
     display: none;
     cursor: pointer;
 }
-
 .form button{
     width: 60%;
     height: auto;
