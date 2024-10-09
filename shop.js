@@ -94,33 +94,42 @@ cartContainer.forEach((item, index)=>{
 
 // displaying clicked products
 
+function displayImages() {
+    let productContainer = document.querySelectorAll(".product")
+productContainer.forEach((item, index)=>{
+    item.setAttribute("id", index)
 
-let productDisplay = document.querySelectorAll(".product")
-productDisplay.forEach((item, index)=>{
     item.addEventListener("click", (event)=>{
-        
-        let userEvent = event.target
-        let userParent = userEvent.parentElement.parentElement
+        let userTarget = event.target
 
-        
-        window.location.href = `shopping.html?data=${encodeURIComponent(userParent)}`
-        // console.log(userEvent);
-        
-        item.setAttribute("id", index)
+        let targetParent = userTarget.parentElement.parentElement
 
-        if (userParent.classList.contains("product") || userEvent.classList.contains("product-details") || userEvent.classList.contains("product-cards")) {
+        // let imgElement = userTarget.src 
+
+        if (targetParent.classList.contains("product") || userTarget.classList.contains("product")) {
+            let targetID = Number(userTarget.id)
             
-            let newID = Number(item.id)
-            console.log(newID);
-            
-            
+            let imgelement = event.target
+                
+                
+                let ID = Number(imgelement.id) 
+                
+                let imgUrl = imgelement.src
+
+                if (targetID === ID) {
+                   
+                localStorage.setItem("selectedImg", imgUrl)
+                    
+                window.location.href = 'shopping.html';
+                                
+                }
             
         }
-        
-        
-        
-        
-        
-        
+
     })
 })
+   
+}
+
+displayImages()
+
