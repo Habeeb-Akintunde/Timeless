@@ -1,3 +1,21 @@
+// displaying
+let storedImageUrl = localStorage.getItem('selectedImg');
+console.log(storedImageUrl);
+
+let images = document.createElement("img")
+images.src = storedImageUrl
+
+console.log(storedImageUrl);
+
+let displayContainer = document.getElementById("display-img")
+displayContainer.append(images)
+// let displayImageContainer = document.querySelectorAll(".img")
+// displayImageContainer.forEach((item, index)=>{
+//     item.append(images)
+// })  
+
+
+
 let cart = document.querySelectorAll(`.cart`)
 cart.forEach((item, index)=>{
     item.setAttribute("data-action", "add")
@@ -10,7 +28,7 @@ added.forEach((item, index)=>{
 })
 let cartContainer = document.querySelectorAll(`.cart-like`)
 
-let displayImage = document.getElementById("display-img")
+
 let sideContent = document.getElementById("side-content")
 
 let image = document.querySelectorAll(".imgg")
@@ -51,27 +69,15 @@ function myFunction() {
 
         })
     })
-    
+  
 }
 
 myFunction()
 
 
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  }
 
-  // Retrieve the data parameter
-  const receivedData = getQueryParam('userParent');
 
-  // Display the received data
-  if (receivedData) {
-    console.log(receivedData);
-    
-  }
-  getQueryParam()
-
+ 
 // cart.addEventListener
 
 cartContainer.forEach((item, index)=>{
