@@ -17,6 +17,7 @@ part.addEventListener("click", (event)=>{
         })
         productHidden.forEach((view)=>{
             view.style.display = "flex"
+            window.scrollTo(0, 0);
         })
         number1.style.backgroundColor = "#625B71"
         number2.style.backgroundColor = "#1D192B"
@@ -26,6 +27,7 @@ part.addEventListener("click", (event)=>{
         })
         productHidden.forEach((view)=>{
             view.style.display = "none"
+            window.scrollTo(0, 0);
         })
         number1.style.backgroundColor = "#1D192B"
         number2.style.backgroundColor = "#625B71"
@@ -96,7 +98,7 @@ cartContainer.forEach((item, index)=>{
 
 function displayImages() {
     let productContainer = document.querySelectorAll(".product")
-productContainer.forEach((item, index)=>{
+    productContainer.forEach((item, index)=>{
     item.setAttribute("id", index)
 
     item.addEventListener("click", (event)=>{
@@ -110,6 +112,7 @@ productContainer.forEach((item, index)=>{
             let targetID = Number(userTarget.id)
             
             let imgelement = event.target
+            
                 
                 
                 let ID = Number(imgelement.id) 
@@ -117,10 +120,12 @@ productContainer.forEach((item, index)=>{
                 let imgUrl = imgelement.src
 
                 if (targetID === ID) {
-                   
-                localStorage.setItem("selectedImg", imgUrl)
-                    
-                window.location.href = 'shopping.html';
+                    if (event.target.tagName === 'IMG') {
+                        localStorage.setItem("selectedImg", imgUrl)
+                        window.location.href = 'shopping.html';
+                    }
+        
+
                                 
                 }
             
