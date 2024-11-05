@@ -14,7 +14,16 @@
     font-family: "Satoshi-black";
     src: url("./Font/Satoshi-Black.otf");
 }
-
+@keyframes heroImgSlider {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -114,7 +123,9 @@ body{
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
+    
 }
+
 .hero{
     width: 100%;
     height: auto;
@@ -125,6 +136,12 @@ body{
     align-items: stretch;
     justify-content: center;
     column-gap: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:  opacity 1s ease, transform 1s ease;
+}
+.hero.in-view{
+    animation: heroImgSlider 1s ease-in-out forwards;
 }
 .hero-side{
     width: 50%;
@@ -190,12 +207,19 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    /* opacity: 0;
+    transform: translateY(20px);
+    transition:  opacity 1s ease, transform 1s ease; */
 }
+/* .hero-side2.in-view{
+    animation: heroImgSlider 1s ease-in-out forwards;
+} */
 .hero-side2 img{
     width: 35rem;
     height: fit-content;
     border-radius: 8rem 3rem 8rem 3rem;
+    
 }
 
 .hero-cont{

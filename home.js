@@ -91,3 +91,18 @@ function displayImages() {
 
 displayImages()
 
+// animation
+const heroslider = document.querySelector(`.hero`)
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting) {
+            entry.target.classList.add(`in-view`)
+            observer.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 1
+}
+)
+observer.observe(heroslider);
