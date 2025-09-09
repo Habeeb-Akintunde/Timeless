@@ -47,3 +47,25 @@ if (userData === "review") {
     review.style.display = "none"
 }  
 })
+
+// collect userdetials
+let userDetailsArray = []
+const userID = document.getElementById("userid")
+// const password = document.getElementById("password")
+const form = document.getElementById("form")
+form.addEventListener("submit", (event)=>{
+    event.preventDefault()
+
+    let userDetails = {
+        userID : userID.value,
+        passwordInput : passwordInput.value  
+    }
+
+    userDetailsArray.push(userDetails)
+
+    localStorage.setItem("userDetails", JSON.stringify(userDetailsArray))
+    
+
+    form.reset()
+    
+})

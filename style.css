@@ -208,13 +208,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;   
-    /* opacity: 0;
+    opacity: 0;
     transform: translateY(20px);
-    transition:  opacity 1s ease, transform 1s ease; */
+    transition:  opacity 1s ease, transform 1s ease;
 }
-/* .hero-side2.in-view{
+.hero-side2.in-view{
     animation: heroImgSlider 1s ease-in-out forwards;
-} */
+}
 .hero-side2 img{
     width: 35rem;
     height: fit-content;
